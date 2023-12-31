@@ -19,6 +19,6 @@ jobs:
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
       
     - name: Build the Docker image
-      run: docker build -t rahuldocker942/cicd-pipeline .
+      run: docker build -t rahuldocker942/cicdnodejs .
     - name: Push to Dockerhub
-      run: docker push rahuldocker942/cicd-pipeline:latest
+      run: docker push rahuldocker942/cicdnodejs:latest
